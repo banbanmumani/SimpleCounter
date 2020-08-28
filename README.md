@@ -5,23 +5,23 @@ It is an simple counter example of SwiftUI and ReSwift.
 ## Preview
 ![Simple Counter Preview](./SimpleCounterPreview_L.gif)
 
-## Heriachy
+## Difference between Xcode's "single view app"
 
 ```
 ProjectRoot
 |`- Redux                                                      
-|    |`- Counter                    <---- Add Models like this
+|    |`- Counter                    <---- Add model Redux setting
 |    |    |`- CounterAction.swift   <--|                                      
 |    |    |`- CounterReducer.swift  <--|                                       
 |    |     `- CounterState.swift    <--'                       
 |    |                                                      
-|    |`- Redux.swift                <---- Add Redux setting
+|    |`- Redux.swift                <---- Add global Redux setting
 |    |`- AppState.swift             <--|              
 |    |`- Middleware.swift           <--|                
 |     `- ReduxStore.swift           <--'
 |
 |`- AppDelegate.swift
-|`- SceneDelegate.swift             <---- Add Store Setting
+|`- SceneDelegate.swift             <---- Add store setting
  `- ContentView.swift                          
 ```
 

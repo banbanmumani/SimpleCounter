@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		176014F724F8F7B800D2E530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176014F624F8F7B800D2E530 /* Assets.xcassets */; };
 		176014FA24F8F7B800D2E530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176014F924F8F7B800D2E530 /* Preview Assets.xcassets */; };
 		176014FD24F8F7B800D2E530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176014FB24F8F7B800D2E530 /* LaunchScreen.storyboard */; };
+		1760150624F8F81B00D2E530 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1760150524F8F81B00D2E530 /* ReSwift */; };
+		1760150A24F8F88100D2E530 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760150924F8F88100D2E530 /* Redux.swift */; };
+		1760150C24F8F8A400D2E530 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760150B24F8F8A400D2E530 /* AppState.swift */; };
+		1760150E24F8F8D800D2E530 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760150D24F8F8D800D2E530 /* Middleware.swift */; };
+		1760151024F8F8FA00D2E530 /* ReduxStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760150F24F8F8FA00D2E530 /* ReduxStore.swift */; };
+		1760151224F8F92500D2E530 /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760151124F8F92500D2E530 /* CounterAction.swift */; };
+		1760151424F8F93C00D2E530 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760151324F8F93C00D2E530 /* CounterReducer.swift */; };
+		1760151624F8F95200D2E530 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760151524F8F95200D2E530 /* CounterState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,13 @@
 		176014F924F8F7B800D2E530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		176014FC24F8F7B800D2E530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		176014FE24F8F7B800D2E530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1760150924F8F88100D2E530 /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		1760150B24F8F8A400D2E530 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		1760150D24F8F8D800D2E530 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		1760150F24F8F8FA00D2E530 /* ReduxStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxStore.swift; sourceTree = "<group>"; };
+		1760151124F8F92500D2E530 /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
+		1760151324F8F93C00D2E530 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		1760151524F8F95200D2E530 /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1760150624F8F81B00D2E530 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +72,7 @@
 		176014EF24F8F7B600D2E530 /* SimpleCounter */ = {
 			isa = PBXGroup;
 			children = (
+				1760150724F8F83700D2E530 /* Redux */,
 				176014F024F8F7B600D2E530 /* AppDelegate.swift */,
 				176014F224F8F7B600D2E530 /* SceneDelegate.swift */,
 				176014F424F8F7B600D2E530 /* ContentView.swift */,
@@ -75,6 +92,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1760150724F8F83700D2E530 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				1760150824F8F84300D2E530 /* Counter */,
+				1760150924F8F88100D2E530 /* Redux.swift */,
+				1760150B24F8F8A400D2E530 /* AppState.swift */,
+				1760150D24F8F8D800D2E530 /* Middleware.swift */,
+				1760150F24F8F8FA00D2E530 /* ReduxStore.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		1760150824F8F84300D2E530 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				1760151124F8F92500D2E530 /* CounterAction.swift */,
+				1760151324F8F93C00D2E530 /* CounterReducer.swift */,
+				1760151524F8F95200D2E530 /* CounterState.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +130,9 @@
 			dependencies = (
 			);
 			name = SimpleCounter;
+			packageProductDependencies = (
+				1760150524F8F81B00D2E530 /* ReSwift */,
+			);
 			productName = SimpleCounter;
 			productReference = 176014ED24F8F7B600D2E530 /* SimpleCounter.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +161,9 @@
 				Base,
 			);
 			mainGroup = 176014E424F8F7B600D2E530;
+			packageReferences = (
+				1760150424F8F81B00D2E530 /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = 176014EE24F8F7B600D2E530 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,7 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				176014F124F8F7B600D2E530 /* AppDelegate.swift in Sources */,
+				1760150C24F8F8A400D2E530 /* AppState.swift in Sources */,
+				1760151024F8F8FA00D2E530 /* ReduxStore.swift in Sources */,
 				176014F324F8F7B600D2E530 /* SceneDelegate.swift in Sources */,
+				1760151424F8F93C00D2E530 /* CounterReducer.swift in Sources */,
+				1760151224F8F92500D2E530 /* CounterAction.swift in Sources */,
+				1760151624F8F95200D2E530 /* CounterState.swift in Sources */,
+				1760150E24F8F8D800D2E530 /* Middleware.swift in Sources */,
+				1760150A24F8F88100D2E530 /* Redux.swift in Sources */,
 				176014F524F8F7B600D2E530 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1760150424F8F81B00D2E530 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1760150524F8F81B00D2E530 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1760150424F8F81B00D2E530 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 176014E524F8F7B600D2E530 /* Project object */;
 }
